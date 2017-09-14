@@ -15,7 +15,12 @@
 @font-face {
   font-family: sahel;
   font-weight: regular;
-  src: url('Sahel.woff') format("woff");
+  src: url('Sahel-FD.woff') format("woff");
+}
+@font-face {
+  font-family: sahel;
+  font-weight: bold;
+  src: url('Sahel-Bold-FD.woff') format("woff");
 }
 
 html {
