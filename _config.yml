@@ -65,6 +65,7 @@ plugins:
   - jekyll-feed # Create an Atom feed using the official Jekyll feed gem
   - jekyll-sitemap
   - jalalidate
+  - jekyll-paginate
 
 # Exclude these files from your production _site
 exclude:
@@ -73,3 +74,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+paginate: 10
+paginate_path: "/page:num/"

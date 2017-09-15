@@ -2,9 +2,22 @@
 layout: default
 indexavatar: https://secure.gravatar.com/avatar/789598edd4440e0a5e0d8e37f4ae5de7?s=250&d=mm&r=g
 ---
-
 <div class="posts">
-  {% for post in site.posts %}
+  {% if paginator %}
+    {% for post in paginator.posts %}
+      <article class="post">
+
+        <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">ادامه مطلب</a>
+      </article>
+    {% endfor %}
+  {% else %}
+    {% for post in site.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -15,5 +28,18 @@ indexavatar: https://secure.gravatar.com/avatar/789598edd4440e0a5e0d8e37f4ae5de7
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">ادامه مطلب</a>
     </article>
-  {% endfor %}
+    {% endfor %}
+  {% endif %}
+</div>
+
+<div class="pagination">
+  <p>
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | absolute_url }}" class="next" style="float: left"> صفحه بعدی >> </a>
+    {% endif %}
+
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | absolute_url }}" class="previous" style="margin-right:0px;">&#60&#60    صفحه قبلی</a>
+    {% endif %}
+  </p>
 </div>

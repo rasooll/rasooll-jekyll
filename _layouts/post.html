@@ -12,6 +12,17 @@ layout: default
   <div class="date">
     نوشته شده در {{ page.date | jdate: "%A %d %b %Y" }}
   </div>
-  <hr />
+  <br />
+  <div class="paginate">
+    <p>
+      {% if page.next %}
+      <a href="{{ page.next.url | absolute_url }}" style="float: left"> {{ page.next.title }} >> </a>
+      {% endif %}
+  
+      {% if page.previous %}
+      <a href="{{ page.previous.url | absolute_url }}" style="margin-right:0px;"><<	 {{ page.previous.title }}</a>
+      {% endif %}
+    </p>
+  </div>
   {% include disqus.html %}
 </article>
