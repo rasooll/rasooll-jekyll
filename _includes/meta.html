@@ -17,6 +17,10 @@
     <meta property="twitter:title" content="{{ page.title }}" />
     {% endif %}
 
+    {% if page.tags %}
+    <meta name="keywords" content="{% for tag in page.tags %}{{ tag }},{% endfor %}" />
+    {% endif %}
+
     {% if page.postimg %}
     <meta property="og:image" content="{{ site.url }}{{ page.postimg }}" />
     {% endif %}
