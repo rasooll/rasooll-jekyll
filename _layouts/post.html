@@ -14,15 +14,16 @@ layout: default
   </div>
   <br />
   <div class="paginate">
-    <p>
-      {% if page.next %}
-      <a href="{{ page.next.url | absolute_url }}" style="float: left"> {{ page.next.title }} >> </a>
-      {% endif %}
-  
+    <div class="col-xs-6">
       {% if page.previous %}
       <a href="{{ page.previous.url | absolute_url }}" style="margin-right:0px;"><<	 {{ page.previous.title }}</a>
       {% endif %}
-    </p>
+    </div>
+    <div class="col-xs-6">
+      {% if page.next %}
+      <a href="{{ page.next.url | absolute_url }}" style="float: left"> {{ page.next.title }} >> </a>
+      {% endif %}
+    </div>
   </div>
   {% include disqus.html %}
 </article>
