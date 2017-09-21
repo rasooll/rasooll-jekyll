@@ -27,7 +27,7 @@
               <p class="site-description">{{ site.description }}</p>
             </div>
 
-            <nav>
+            <nav class="font-titr">
               <a href="{{ site.baseurl }}/archive">آرشیو</a>
               <a href="{{ site.baseurl }}/about">درباره‌ی من</a>
             </nav>
@@ -43,10 +43,10 @@
     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
-          {% include svg-icons.html %}
-          <p class="footer-text">
-            مطالب تحت لیسانس <a href="https://creativecommons.org/licenses/by-nc-nd/3.0/deed.fa" target="_blank">کریتیو کامنز</a> منتشر می‌شوند. 
-          </p>
+          <div class="social-icon">{% include svg-icons.html %}</div>
+          <div class="footer-text">
+            <i class="fa fa-copyright"></i> رسول صفری    ۱۳۹۶ <i class="fa fa-heart heart-color"></i>
+          </div>
         </footer>
       </div>
     </div>

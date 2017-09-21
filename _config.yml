@@ -9,19 +9,12 @@ avatar: https://secure.gravatar.com/avatar/789598edd4440e0a5e0d8e37f4ae5de7?s=14
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
   email: safari@rasooll.com
-  facebook:
-  flickr:
   github: rasoolsf
   instagram: rasool.sf
   linkedin: rasoolsf
-  pinterest:
-  rss: # just type anything here for a working RSS icon
   twitter: rasool_sf
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -58,7 +51,7 @@ kramdown:
 
 # Set the Sass partials directory, as we're using @imports
 sass:
-  style: :expanded # You might prefer to minify using :compressed
+  style: :compressed # default is :expanded ,But you might prefer to minify using :compressed
 
 # Use the following plug-ins
 plugins:

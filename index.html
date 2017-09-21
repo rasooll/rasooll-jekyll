@@ -13,8 +13,16 @@ tags: [رسول صفری,وبلاگ,رسول,صفری,rasool safari,rasool,rasoo
         <div class="entry">
           {{ post.excerpt }}
         </div>
-
-        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">ادامه مطلب</a>
+        <div>
+        <div class="col-xs-8 pull-left" style="text-align: left;">
+          <div class="date">
+            {{ post.date | jdate: "%A %d %b %Y" }}
+          </div>
+        </div>
+        <div class="col-xs-4 pull-right" style="padding-right: 0px !important;">
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">ادامه مطلب</a>
+        </div>
+      </div>
       </article>
     {% endfor %}
   {% else %}

@@ -1,0 +1,44 @@
+.social-icon {
+    font-size: 26px;
+    a {
+        margin: 0px 8px;
+        .fa-envelope {
+            color: #704643;
+        }
+        .fa-github {
+            color: #6cc644;
+        }
+        .fa-twitter {
+            color: #1da1f2;
+        }
+        .fa-linkedin {
+            color: #0077b5;
+        }
+        .fa-instagram {
+            color: #e1306c;
+        }
+        .fa-rss {
+            color: #F05E0A;
+        }
+      }
+  }
+.heart-color {
+    color: #FD004C
+}
+.font-titr {
+    font-family: titr;
+}
+
+.paginate{
+    margin: 12px 0px;
+}
+.post-pg-btn{
+    width: 100%;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: $pink;
+    margin: 12px 0px;
+    padding: 5px 8px;
+    text-align: center;
+    a{color: $white;}
+}

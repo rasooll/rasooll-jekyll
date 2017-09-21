@@ -15,12 +15,17 @@
 @font-face {
   font-family: sahel;
   font-weight: regular;
-  src: url('Sahel-FD.woff') format("woff");
+  src: url('fonts/Sahel-FD.woff') format("woff");
 }
 @font-face {
   font-family: sahel;
   font-weight: bold;
-  src: url('Sahel-Bold-FD.woff') format("woff");
+  src: url('fonts/Sahel-Bold-FD.woff') format("woff");
+}
+@font-face {
+  font-family: titr;
+  font-weight: regular;
+  src: url('fonts/BTitr.woff') format("woff");
 }
 
 html {
@@ -30,7 +35,7 @@ html {
 body {
   direction: rtl;
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.6 $helvetica;
   color: $darkGray;
 }
 
@@ -51,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 
   @include mobile {
-    line-height: 1.4;
+    line-height: 1.6;
   }
 }
 
@@ -80,11 +85,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: $pink;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $pink;
   }
 }
 
@@ -206,7 +211,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: titr, $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -244,7 +249,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $blue;
+      color: $pink;
     }
   }
 }
@@ -281,12 +286,6 @@ nav {
     text-transform: uppercase;
     font-size: 15px;
   }
-  .paginate {
-    border-top:1px dashed;
-    margin-bottom:8px;
-    font-size: 16px;
-    padding-top: 15px;
-  }
 }
 
 .wrapper-footer {
@@ -301,6 +300,7 @@ footer {
   text-align: center;
 }
 .footer-text{
+  margin-top: 8px;
   font-size: 14px;
   color: #555;
 }
@@ -310,3 +310,20 @@ footer {
 @import "highlights";
 @import "svg-icons";
 @import "grid";
+@import "custom";
+
+/*----- Font Awesome -----*/
+@import "fa/variables";
+@import "fa/mixins";
+@import "fa/path";
+@import "fa/core";
+@import "fa/larger";
+@import "fa/fixed-width";
+@import "fa/list";
+@import "fa/bordered-pulled";
+@import "fa/animated";
+@import "fa/rotated-flipped";
+@import "fa/stacked";
+@import "fa/icons";
+@import "fa/screen-reader";
+/*----- END F.. A... -----*/
