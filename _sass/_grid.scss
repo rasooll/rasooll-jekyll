@@ -640,3 +640,6 @@
 .pull-left {
   float: left !important;
 }
+.row::after {
+  clear: both;
+}
