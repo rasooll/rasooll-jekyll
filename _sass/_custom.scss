@@ -28,20 +28,15 @@
 .font-titr {
     font-family: titr;
 }
-
-.paginate{
-    margin: 12px 0px;
+.font-sahel {
+    font-family: sahel;
 }
-.post-pg-btn{
-    width: 100%;
-    font-size: 16px;
-    border-radius: 4px;
-    border: 1px solid $pink;
-    margin: 12px 0px;
-    padding: 5px 8px;
+.align-right {
+    text-align: right;
+}
+.align-left {
+    text-align: left;
+}
+.align-center {
     text-align: center;
-}
-.post-pg-btn:hover {
-    background-color: $pink;
-    a {color: $white;}
 }

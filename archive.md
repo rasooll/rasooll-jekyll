@@ -3,18 +3,22 @@ layout: default
 title: آرشیو
 permalink: /archive/
 ---
-<section class="archive-post">
+<section class="archive">
 
    {% for post in site.posts %}
        {% assign currentDate = post.date | jdate: "%Y" %}
        {% if currentDate != myDate %}
-           {% unless forloop.first %}</ul>{% endunless %}
            <h1>{{ currentDate }}</h1>
-           <div>
-           {% assign myDate = currentDate %}
+       {% assign myDate = currentDate %}
        {% endif %}
-       <p><span class="date" style="margin-left: 8px;">{{ post.date | jdate: "%d / %m" }}</span><a href="{{ post.url }}">{{ post.title }}</a></p>
-       {% if forloop.last %}</div>{% endif %}
+        <div class="row item">
+            <div class="col-3 col-sm-2 font-sahel align-center">
+                {{ post.date | jdate: "%d / %m" }}
+            </div>
+            <div class="col-9 col-sm-10">
+                <a href="{{ post.url }}">{{ post.title }}</a>
+            </div>
+        </div>
    {% endfor %}
 
 </section>

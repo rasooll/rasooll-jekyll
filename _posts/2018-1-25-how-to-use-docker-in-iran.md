@@ -6,7 +6,7 @@ postimg:
 tags: [docker,wordpress,container,filter,privoxy,proxychains,socks,wp,dockerhub,داکر,وردپرس,داکرهاب,کانتینر]
 ---
 دیروز داخل وبلاگم پستی نوشتم درباره‌ی نصب وردپرس توسط داکر ، یکی از مشکلاتی که ما ایرانی ها برای استفاده از داکر داریم این هست که ما تحریم هستیم و داکر سرویس‌های خودش را در اختیار ما قرار نمیده خوب این مشکل با هر نوع روش تغییر آیپی باید حل بشه اما روی گنو لینوکس برای عبور داکر از پروکسی باید از ابزار proxychains استفاده کرد اما داکر این ابزار را دور میزنه و ارتباط مستقیم روی سرور خودش ایجاد میکنه درنتیجه تحریم ها دور زده نمیشه و باقیست!
-<blockquote dir="ltr" style="font-family: Helvetica,Arial,sans-serif;"> 403 Forbidden<br />
+<blockquote class="ltr">403 Forbidden<br />
 Since Docker is a US company, we must comply with US export control regulations. In an effort to comply with these, we now block all IP addresses that are located in Cuba, Iran, North Korea, Republic of Crimea, Sudan, and Syria. If you are not in one of these cities, countries, or regions and are blocked, please reach out to https://support.docker.com </blockquote>
 خوب دیگه الان وقتشه تحریم ها را دور بزنیم !
 
