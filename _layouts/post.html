@@ -16,16 +16,20 @@ layout: default
     <div class="row">
     <div class="col-sm-6">
       {% if page.previous %}
-      <div class=" post-pg-btn post-previous">
-        <a href="{{ page.previous.url | absolute_url }}"><i class="fa fa-arrow-right" aria-hidden="true"></i>
-          {{ page.previous.title }}</a>
-      </div>
+        <a href="{{ page.previous.url | absolute_url }}" title="{{ page.previous.title }}">
+          <div class=" post-pg-btn post-previous">
+            <i class="fa fa-arrow-right pull-right" aria-hidden="true"></i> {{ page.previous.title }}
+          </div>
+        </a>
       {% endif %}
     </div>
     <div class="col-sm-6">
-      {% if page.next %}<div class=" post-pg-btn post-next">
-      <a href="{{ page.next.url | absolute_url }}"> {{ page.next.title }} <i class="fa fa-arrow-left" aria-hidden="true"></i>
-      </a></div>
+      {% if page.next %}
+        <a href="{{ page.next.url | absolute_url }}" title="{{ page.next.title }}">
+          <div class=" post-pg-btn post-next">
+              <i class="fa fa-arrow-left pull-left" aria-hidden="true"></i> {{ page.next.title }}
+          </div>
+        </a>
       {% endif %}
     </div>
   </div>

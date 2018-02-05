@@ -187,11 +187,17 @@ nav.topbar{
       margin: 12px 0px;
       padding: 5px 8px;
       text-align: center;
-      a {color: $mycolor1;}
+      color: $mycolor1;
+      height: 2.35em;
+      overflow: hidden;
+      i.fa {
+        position: relative;
+        top: .35em;
+      }
   }
   .post-pg-btn:hover {
       background-color: $mycolor1;
-      a {color: white;}
+      color: white;
   }
   .progress-bar {
     font-weight: 700;
