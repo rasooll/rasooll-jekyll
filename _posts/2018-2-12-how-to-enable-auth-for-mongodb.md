@@ -20,7 +20,7 @@ db.createUser(
   {
     user: "myUserAdmin",
     pwd: "abc123",
-    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+    roles: [ { role: "root", db: "admin" } ]
   }
 )
 ```
@@ -33,6 +33,8 @@ db.createUser(
 ```
 security:
     authorization: enabled
+setParameter:
+    enableLocalhostAuthBypass: false
 ```
 اکنون باید سرویس مربوط به دیتابیس را راه اندازی مجدد کنیم:
 ```bash
