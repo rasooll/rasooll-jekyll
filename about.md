@@ -3,11 +3,15 @@ layout: page
 title: درباره‌ی من
 permalink: /about/
 ---
-رسول صفری هستم متولد اولین روز تیر ماه سال ۱۳۷۵ در تهران به الکترونیک علاقه‌ی زیادی دارم و از طراحی وب سایت هم لذت می‌برم.
+رسول صفری هستم متولد اولین روز تیر ماه سال ۱۳۷۵ در تهران.
 
-دانشجوی مهندسی برق هستم در دانشگاه آزاد شهرری (یادگار امام)
+دانشجوی مهندسی برق گرایش الکترونیک در دانشگاه آزاد شهرری (یادگار امام)
 
-اصولا به آزادی اهمیت زیادی میدم و سیستم عامل محبوب من هم گنو/لینوکس هست ، به این دلیل که در این سیستم عامل محدود به هیچ چیز نیستم و تمامی خواسته هایم قابل اجراست.
+از برنامه نویسی وب لذت می‌برم و حس خوب خلق کردن برنامه‌های جدید را دوست دارم.
+
+در گذشته بیشتر کدنویسی رابط کاربری انجام داده‌ام ولی حال علاقه‌ام به سمت سرور تغییر کرده است.
+
+اصولا به آزادی اهمیت زیادی میدهم و سیستم عامل محبوب من هم گنو/لینوکس هست ، به این دلیل که در این سیستم عامل محدود به هیچ چیز نیستم و تمامی خواسته هایم قابل اجراست.
 
 <div class="align-center">
   <h2>
@@ -31,7 +35,7 @@ permalink: /about/
   </div>
   <div class="row">
     <div class="col-12 col-sm-3 name">
-      Shell
+      Bash
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
@@ -47,8 +51,20 @@ permalink: /about/
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-          60%
+        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+          70%
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-sm-3 name">
+      JavaScript
+    </div>
+    <div class="col-12 col-sm-9">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+          65%
         </div>
       </div>
     </div>
@@ -67,7 +83,7 @@ permalink: /about/
   </div>
   <div class="row">
     <div class="col-12 col-sm-3 name">
-      JS
+      NodeJS
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
@@ -111,7 +127,7 @@ permalink: /about/
 <section class="skills">
   <div class="row">
     <div class="col-12 col-sm-3 name">
-      wordpress
+      Wordpress
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
@@ -123,7 +139,7 @@ permalink: /about/
   </div>
   <div class="row">
     <div class="col-12 col-sm-3 name">
-      joomla
+      Joomla
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
