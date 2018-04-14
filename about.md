@@ -19,7 +19,7 @@ permalink: /about/
   </h2>
 </div>
 
-### زبان‌های کدنویسی:
+### کدنویسی:
 <section class="skills">
   <div class="row">
     <div class="col-12 col-sm-3 name">
@@ -35,19 +35,19 @@ permalink: /about/
   </div>
   <div class="row">
     <div class="col-12 col-sm-3 name">
-      Bash
+      Python
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-          80%
+        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+          85%
         </div>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col-12 col-sm-3 name">
-      Python
+      JavaScript
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
@@ -59,7 +59,7 @@ permalink: /about/
   </div>
   <div class="row">
     <div class="col-12 col-sm-3 name">
-      JavaScript
+      Bash
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
@@ -71,32 +71,32 @@ permalink: /about/
   </div>
   <div class="row">
     <div class="col-12 col-sm-3 name">
-      PHP
+      RESTful API
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-          50%
+        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+          65%
         </div>
       </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-sm-3 name">
-      NodeJS
-    </div>
-    <div class="col-12 col-sm-9">
-      <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
-          45%
-        </div>
-    </div>
     </div>
   </div>
 </section>
 
 ### فریم ورک‌ها:
 <section class="skills">
+  <div class="row">
+    <div class="col-12 col-sm-3 name">
+      Django
+    </div>
+    <div class="col-12 col-sm-9">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+          65%
+        </div>
+    </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-12 col-sm-3 name">
       Bootstrap
