@@ -91,8 +91,8 @@ permalink: /about/
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
-          65%
+        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+          75%
         </div>
     </div>
     </div>
