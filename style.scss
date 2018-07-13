@@ -242,16 +242,6 @@ section.skills {
 @import "custom";
 
 @media (max-width: 575px) {
-  nav {
-    text-align: center;
-    margin-bottom: 1.15em;
-  }
-  header {
-    text-align: center;
-    img.avatar{
-      margin-bottom: .5em;
-    }
-  }
   section.skills {
     .name {
       text-align: left;
@@ -262,6 +252,32 @@ section.skills {
   }
 }
 @media (min-width: 576px) {
+  section.skills {
+    .name {
+      text-align: center;
+    }
+    .progress {
+      position: relative;
+      top: 5px;
+      direction: ltr;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  nav {
+    text-align: center;
+    margin-bottom: 1.15em;
+  }
+  header {
+    text-align: center;
+    img.avatar{
+      margin-bottom: .5em;
+    }
+  }
+}
+
+@media (min-width: 768px) {
   header {
     img.avatar {
       float: right;
@@ -272,16 +288,6 @@ section.skills {
     text-align: left;
     .vertical-middle{
       vertical-align: middle;
-    }
-  }
-  section.skills {
-    .name {
-      text-align: center;
-    }
-    .progress {
-      position: relative;
-      top: 5px;
-      direction: ltr;
     }
   }
 }
