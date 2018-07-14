@@ -149,6 +149,18 @@ permalink: /about/
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-12 col-sm-3 name">
+      MongoDB
+    </div>
+    <div class="col-12 col-sm-9">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100" style="width: 35%;">
+          35%
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 ### سیستم‌های مدیریت محتوا:
