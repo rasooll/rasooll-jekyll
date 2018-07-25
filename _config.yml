@@ -68,6 +68,7 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - vendor/bundle/
 
 paginate: 10
 paginate_path: "/page:num/"
