@@ -1,6 +1,6 @@
 <div dir="rtl" align="right">
 
-[![TravisCI Status](https://api.travis-ci.org/rasooll/rasooll-jekyll.svg?branch=master)](https://travis-ci.org/rasooll/rasooll-jekyll/settings)
+[![TravisCI Status](https://api.travis-ci.org/rasooll/rasooll-jekyll.svg?branch=master)](https://travis-ci.org/rasooll/rasooll-jekyll)
 
 این مخزن برای وبلاگ شخصی من است. [پیوند](https://rasooll.com)
 
