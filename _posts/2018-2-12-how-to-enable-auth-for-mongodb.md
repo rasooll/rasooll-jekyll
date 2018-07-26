@@ -2,7 +2,7 @@
 layout: post
 title: آموزش فعالسازی احراز هویت برای MongoDB
 category: آموزشی
-postimg: 
+postimg: /images/post/MongoDB.png
 tags: [mongodb,auth,nosql,database,security,username,password,مونگو,مونگودی‌بی,مونگو دی بی,احراز هویت,احراز,هویت]
 ---
 <p align="center"><img src="/images/post/MongoDB.png" alt="MongoDB" /></p>
