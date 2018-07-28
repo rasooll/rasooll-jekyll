@@ -4,31 +4,29 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
      
     {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt| strip_html }}" />
-    <meta property="og:description" content="{{ page.excerpt| strip_html }}" />
+    <meta name="description" content="{{ page.excerpt| strip_html | truncate: 275 }}" />
+    <meta property="og:description" content="{{ page.excerpt| strip_html | truncate: 275 }}" />
+    <meta name="twitter:description" content="{{ page.excerpt| strip_html | truncate: 275 }}" />
     {% else %}
     <meta name="description" content="{{ site.descriptionmeta }}">
     <meta property="og:description" content="{{ site.descriptionmeta }}" />
     {% endif %}
-    <meta name="author" content="{{ site.name }}" />
-
-    {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}" />
-    <meta property="twitter:title" content="{{ page.title }}" />
-    {% endif %}
-
+    <meta property="author" content="{{ site.name }}" />
     {% if page.tags %}
     <meta name="keywords" content="{% for tag in page.tags %}{{ tag }},{% endfor %}" />
     {% endif %}
-
+    {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    {% endif %}
     {% if page.postimg %}
-    <meta property="og:image" content="{{ site.url }}{{ page.postimg }}" />
+    <meta property="og:image" content="{{ page.postimg | absolute_url }}" />
+    <meta name="twitter:image" content="{{ page.postimg | absolute_url }}" />
+    <meta name="twitter:image:alt" content="{{ page.title }}">
+    <meta name="twitter:card" content="summary_large_image">
     {% endif %}
-
-    {% if page.indexavatar %}
-    <meta property="og:title" content="{{ site.name }}" />
-    <meta property="twitter:title" content="{{ site.name }}" />
-    <meta property="og:image" content="{{ page.indexavatar }}" />
-    {% endif %}
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" sizes="150x150"> 
-    <link rel="shortcut icon" href="/images/favicon.png" type="image/png" sizes="150x150">
+    <meta name="twitter:site" content="@rasooll_">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:locale" content="fa">
+    <link rel="author" href="{{ site.url }}">
+    <link rel="shortcut icon" href="{{ '/images/favicon.png' | absolute_url }}" type="image/png" sizes="150x150"> 
