@@ -11,7 +11,8 @@
     <![endif]-->
 
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml"/>
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
 
 </head>
 
@@ -74,12 +75,12 @@
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(['trackPageView']);
     _paq.push(['enableLinkTracking']);
-    (function() {
-      var u="//matomo.rasooll.com/";
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
+    (function () {
+      var u = "//matomo.rasooll.com/";
+      _paq.push(['setTrackerUrl', u + 'piwik.php']);
       _paq.push(['setSiteId', '1']);
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
     })();
   </script>
   <!-- End Matomo Code -->
