@@ -242,3 +242,19 @@ permalink: /about/
     </div>
   </div>
 </section>
+
+### فرآیند توسعه نرم افزار:
+<section class="skills">
+  <div class="row">
+    <div class="col-12 col-sm-3 name">
+      Scrum
+    </div>
+    <div class="col-12 col-sm-9">
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+          90%
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
