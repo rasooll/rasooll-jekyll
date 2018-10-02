@@ -10,6 +10,14 @@ tags: [رسول صفری,وبلاگ,رسول,صفری,rasool safari,rasool,rasoo
         <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
         <div class="content">
+            {% if post.postimg %}
+            <div class="cover">
+                
+                <a href="{{ post.url | prepend: site.baseurl }}">
+                    <img src="{{ post.postimg }}" data-url="{{ post.postimg }}">
+                </a>
+            </div>
+            {% endif %}
           {{ post.excerpt }}
         </div>
         <div class="row">
