@@ -81,37 +81,13 @@ permalink: /about/
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col-12 col-sm-3 name">
-      Javascript
-    </div>
-    <div class="col-12 col-sm-9">
-      <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-          60%
-        </div>
-    </div>
-    </div>
-  </div>
 </section>
 
 ### پایگاه داده:
 <section class="skills">
   <div class="row">
     <div class="col-12 col-sm-3 name">
-      MySql
-    </div>
-    <div class="col-12 col-sm-9">
-      <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-          75%
-        </div>
-    </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-sm-3 name">
-      PostgreSQL
+      Relational DB
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
@@ -123,24 +99,12 @@ permalink: /about/
   </div>
   <div class="row">
     <div class="col-12 col-sm-3 name">
-      MongoDB
+      NoSQL DB
     </div>
     <div class="col-12 col-sm-9">
       <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-          50%
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-12 col-sm-3 name">
-      Redis
-    </div>
-    <div class="col-12 col-sm-9">
-      <div class="progress">
-        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-          50%
+        <div class="progress-bar progress-bar-striped bg-mycolor" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+          45%
         </div>
       </div>
     </div>
