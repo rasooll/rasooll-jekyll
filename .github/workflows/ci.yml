@@ -47,6 +47,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: builded
+        path: ./_site
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag rasooll/my-blog:$(date +%Y%m%d)
     - name: Show docker images
