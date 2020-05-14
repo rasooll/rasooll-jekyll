@@ -29,6 +29,11 @@ jobs:
       run: bundle install --path vendor/bundle
     - name: Run tests
       run: bundle exec jekyll build
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: builded
+        path: ./_site
   
   # This workflow contains a single job called "build"
   docker-build:
@@ -38,6 +43,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v2
+    - name: Download artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: builded
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag rasooll/my-blog:$(date +%Y%m%d)
     - name: Show docker images
