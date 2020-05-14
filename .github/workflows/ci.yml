@@ -48,7 +48,15 @@ jobs:
       with:
         name: builded
         path: ./_site
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag rasooll/my-blog:$(date +%Y%m%d)
-    - name: Show docker images
-      run: docker images | grep my-blog
+    - name: Docker build and push
+      env:
+        DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+        DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
+      run: |
+        VERSION=$(date +%Y%m%d)
+        docker build . --file Dockerfile --tag rasooll/my-blog:$VERSION
+        docker login --username $DOCKERHUB_USERNAME --password $DOCKERHUB_PASSWORD
+        docker tag rasooll/my-blog:$VERSION rasooll/my-blog:latest
+        docker push rasooll/my-blog:$VERSION
+        docker push rasooll/my-blog:latest
+
