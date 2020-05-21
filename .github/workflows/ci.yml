@@ -58,4 +58,23 @@ jobs:
         docker tag rasooll/my-blog:$VERSION rasooll/my-blog:latest
         docker push rasooll/my-blog:$VERSION
         docker push rasooll/my-blog:latest
+  deploy:
+    needs: docker-build
+    name: deploy to cluster
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: deploy to cluster
+      uses: steebchen/kubectl@master
+      env:
+        KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+      with:
+        args: set image --record deployment/blog blog=rasooll/my-blog:${GITHUB_REF##*/}
+    - name: verify deployment
+      uses: steebchen/kubectl@master
+      env:
+        KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
+        KUBECTL_VERSION: "1.15"
+      with:
+        args: '"rollout status deployment/blog"'
 
