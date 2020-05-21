@@ -54,7 +54,7 @@ jobs:
         DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
         DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
       run: |
-        VERSION=$(date +%Y%m%d)
+        VERSION=${GITHUB_REF##*/}
         docker build . --file Dockerfile --tag rasooll/my-blog:$VERSION
         docker login --username $DOCKERHUB_USERNAME --password $DOCKERHUB_PASSWORD
         docker tag rasooll/my-blog:$VERSION rasooll/my-blog:latest
