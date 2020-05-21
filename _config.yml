@@ -69,6 +69,8 @@ exclude:
   - README.md
   - CNAME
   - vendor/bundle/
+  - Dockerfile
+  - arvan.yml
 
 paginate: 10
 paginate_path: "/page:num/"
