@@ -1,24 +1,15 @@
-# This is a basic workflow to help you get started with Actions
-
 name: CI
-
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     tags:
     - v**
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   jekyll-build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - name: Set up Ruby
-    # To automatically get bug fixes and new Ruby versions for ruby/setup-ruby,
-    # change this to (see https://github.com/ruby/setup-ruby#versioning):
-    # uses: ruby/setup-ruby@v1
       uses: ruby/setup-ruby@ec106b438a1ff6ff109590de34ddc62c540232e0
       with:
         ruby-version: 2.5.1
@@ -33,13 +24,9 @@ jobs:
       with:
         name: builded
         path: ./_site
-  
-  # This workflow contains a single job called "build"
   docker-build:
     needs: jekyll-build
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - uses: actions/checkout@v2
     - name: Download artifacts
@@ -58,9 +45,8 @@ jobs:
         docker tag rasooll/my-blog:$VERSION rasooll/my-blog:latest
         docker push rasooll/my-blog:$VERSION
         docker push rasooll/my-blog:latest
-  deploy:
+  kubernetes-deploy:
     needs: docker-build
-    name: deploy to cluster
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -77,4 +63,23 @@ jobs:
         KUBECTL_VERSION: "1.15"
       with:
         args: '"rollout status deployment/blog"'
-
+  rsync-deploy:
+    needs: jekyll-build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Download artifacts
+      uses: actions/download-artifact@v2
+      with:
+        name: builded
+        path: ./_site
+    - name: rsync deployments
+      uses: burnett01/rsync-deployments@4.0
+      with:
+        switches: -avzr --delete
+        path: ./_site
+        remote_path: /var/www/rasooll.com/
+        remote_host: ${{ secrets.SSH_HOST }}
+        remote_port: ${{ secrets.SSH_PORT }}
+        remote_user: ${{ secrets.SSH_USER }}
+        remote_key: ${{ secrets.SSH_KEY }}
