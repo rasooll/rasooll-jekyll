@@ -77,7 +77,7 @@ jobs:
       uses: burnett01/rsync-deployments@4.0
       with:
         switches: -avzr --delete
-        path: ./_site
+        path: ./_site/
         remote_path: /var/www/rasooll.com/
         remote_host: ${{ secrets.SSH_HOST }}
         remote_port: ${{ secrets.SSH_PORT }}
